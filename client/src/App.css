@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar styling */
+
+/* src/components/Navbar.css */
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #121319;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    gap: 15px;
+  }
+  
+  .navbar-left span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-center {
+    display: flex;
+    gap: 20px;
+    
+  }
+  
+  .navbar-center a {
+    text-decoration: none;
+    color: whitesmoke;
+
+    font-weight: 400;
+  }
+  
+  .navbar-right button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+  }
+  
+  .navbar-right button:first-child {
+    background-color: #4caf50;
+    color: #fff;
+  }
+
+  .navbar-center .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .navbar-center .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .navbar-center .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .navbar-center .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .navbar-center .dropdown-content a:hover {
+    background-color: #555;
+  }
+
+
+  /* hero page styling */
+ /* src/components/Hero.css */
+
+.hero {
+    background: #4a90e2; /* A shade of blue */
+    background: #6B91FC; 
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.76);
+  }
+  
+  .hero-button {
+    background-color: #fff;
+    color: #4a90e2;
+    padding: 15px 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hero-button:hover {
+    background-color: #4758a8;
+    color: #fff;
+  }
+  
+  .image-container{
+    width: 80%;
+    height: 450px;
+    border: 10px solid rgba(255, 255, 255, 0.804);
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .image-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  /* card styling */
+  /* src/components/Cards.css */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0;
+    background-color: #121319;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+  }
+  
+  .card h2 {
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .card a {
+    background-color: #6B91FC;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card a:hover {
+    background-color: #4758a8;
+  }
+
+  /* discussion forum styling */
+
+  /* src/components/DiscussionForum.css */
+
+.discussion-forum {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .post {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .post h3 {
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  .post p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .post .author {
+    color: #888;
+    font-style: italic;
+  }
+  
+  
+  /* src/components/FinancialEducation.css */
+
+/* src/components/FinancialEducation.css */
+
+.financial-education {
+    display: flex;
+    justify-content: space-around;
+    background-color: #121319;
+    position: relative;
+    overflow: hidden;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .education-item {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .education-item h2 {
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  .article h3,
+  .video h3,
+  .tips h3 {
+    color: #333;
+    font-size: 1.25rem;
+  }
+  
+  .article p,
+  .video p,
+  .tips p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .article a,
+  .video a,
+  .tips a {
+    background-color: #6B91FC;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .article a:hover,
+  .video a:hover,
+  .tips a:hover {
+    background-color: #4758a8;
+  }
+  
+
+
+/* src/components/FinancialCalculators.css */
+
+.calculator {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .calculator h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .calculator label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .calculator input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  .calculator button {
+    background-color: #6B91FC;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+
+  }
+  
+  .calculator button:hover {
+    background-color: #4758a8;
+  }
+  
+  .calculator p {
+    color: #333;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .calculator-background{
+    background-color: #4a90e2;
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+
+  }
+  .calculator-background img{
+    opacity: 0.2;
+  }
+
+  /* Add or update styles in your CSS file */
+
+.footer {
+    background-color: #121319;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2rem;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+  }
+  
+
+  /* Add or update styles in your CSS file */
+
+.cta {
+    background-color: #6B91FC;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .cta h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .cta p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .subscribe-form input {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .subscribe-form button {
+    background-color: #4758a8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #334190;
+  }
+  
+  /* calculator content style */
+.calculator-content {
+    text-align: left;
+    padding: 20px;
+    color: white;
+    z-index: 2;
+    text-wrap: wrap;
+    width: 50%;
+  }
+  
+  .calculator-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .calculator-content p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.76);
+    padding-right: 60px;
+  }
+  
+  .calculator-content button {
+    background-color: #fff;
+    color: #4a90e2;
+    padding: 15px 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .calculator-content button:hover {
+    background-color: #4758a8;
+  }
