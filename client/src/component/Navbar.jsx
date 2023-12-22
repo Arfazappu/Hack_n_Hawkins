@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="dropdown">
           <span>Products <i class="fa-solid fa-angle-down"></i></span>
           <div className="dropdown-content">
-            <Link to="/auction">Auction</Link>
+            <Link to="/bidding">Auction</Link>
             <Link to="/mutual-fund">Mutual Fund</Link>
           </div>
         </div>
